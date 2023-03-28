@@ -1,15 +1,15 @@
+// 1. 레이아웃 설정
+import {Container, Col, Row} from "@goorm-dev/gds-goormthon";
+// 2. 
+
 function App() {
     return (
-        <h1
-            style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                height: "100vh",
-            }}
-        >
-            구름톤 참가자 여러분들~ 환영합니다!
-        </h1>
+        <Container>
+            <Row>
+                <Col lg={{offset: 1, size: 4}} xs={{size:12}} >박스 1</Col>
+                <Col lg={{size: 6}} xs={{size:12}} >박스 2</Col>
+            </Row>
+        </Container>
     );
 }
 
